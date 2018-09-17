@@ -1,0 +1,19 @@
+{
+  "name": "critical-css",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/lukemoderwell/critical-css.git",
+  "author": "Luke Moderwell <luke.moderwell@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "criticalcss": "^2.1.0",
+    "parcel-bundler": "^1.9.7"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
