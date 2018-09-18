@@ -5,8 +5,13 @@
     <!-- Set the document's title -->
     <title>Critical CSS Test</title>
 
-    <!-- Link to an external CSS file -->
     {% asset main.scss !integrity %}
+    <style>
+      {% capture include_to_scssify %}
+        {% include critical.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
+    </style>
   </head>
 
   {{ content }}
