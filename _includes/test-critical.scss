@@ -1,0 +1,13 @@
+.card-set {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  padding: 40px;
+  .card {
+    display: inline-flex;
+    flex-direction: column;
+    img {
+      object-fit: cover;
+    }
+  }
+}

@@ -7,10 +7,20 @@
 
     {% asset main.scss !integrity %}
     <style>
-      {% capture include_to_scssify %}
+
+    {% if page.title == 'Home' %}
+      {% capture homepage_css %}
         {% include critical.scss %}
       {% endcapture %}
-      {{ include_to_scssify | scssify }}
+      {{ homepage_css | scssify }}
+    {% endif %}
+
+    {% if page.title == 'test' %}
+      {% capture test_css %}
+        {% include test-critical.scss %}
+      {% endcapture %}
+      {{ test_css | scssify }}
+    {% endif %}
     </style>
   </head>
 
