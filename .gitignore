@@ -4,3 +4,4 @@ _site
 .cache
 dist
 node_modules
+.jekyll-cache
