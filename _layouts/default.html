@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Set the character encoding for this document, so that
+  all characters within the UTF-8 space (such as emoji)
+  are rendered correctly.
+-->
+<meta charset="utf-8">
+<!-- Set the document's title -->
+<title>Critical CSS Test</title>
+
+<!-- Link to an external CSS file -->
+{% asset main.scss !integrity %}
+
+
+<style>
+  /* ... */
+</style>
+
+  {{ content }}
+  {% asset index.js !integrity %}
+</html>

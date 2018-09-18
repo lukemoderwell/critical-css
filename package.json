@@ -7,13 +7,13 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "criticalcss": "^2.1.0",
     "parcel-bundler": "^1.9.7"
   },
   "scripts": {
     "start": "parcel ./src/index.html"
   },
   "devDependencies": {
+    "fs": "^0.0.1-security",
     "node-sass": "^4.9.3"
   }
 }
